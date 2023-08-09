@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - RMIT Store</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/rmit-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <header>
+    
+            <a href="index.html">
+        <img src="assets/images/rmit-store-logo.png" width="300" alt="RMIT logo">
+    </a>
+    <!-- Main Section -->
+    <main>
+        <h1>Contact Us</h1>
+    </center>
+        <form id="contact-form" action="submit.php" method="POST">
+            <div class="form-group">
+                <label for="contact-purpose">Contact Purpose:</label>
+                <select id="contact-purpose" name="contact-purpose">
+                    <option value="sell-books">I want to sell books</option>
+                    <option value="buy-books">I want to buy books</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label>Contact Preference:</label><br>
+                <input type="checkbox" id="contact-email" name="contact-preference" value="email">
+                <label for="contact-email">By email</label><br>
+                <input type="checkbox" id="contact-phone" name="contact-preference" value="phone">
+                <label for="contact-phone">By phone</label>
+            </div>
+            <div class="form-group">
+                <label>Receive Weekly Newsletter:</label><br>
+                <input type="radio" id="receive-yes" name="receive-newsletter" value="yes" checked>
+                <label for="receive-yes">Yes</label>
+                <input type="radio" id="receive-no" name="receive-newsletter" value="no">
+                <label for="receive-no">No</label>
+            </div>
+            <div class="form-group">
+                <label for="extra-notes">Extra Notes:</label>
+                <textarea id="extra-notes" name="extra-notes"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+        <ul>
+            <li><a href="#About Us">About Us</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    <h4>© 2023 RMIT Store. All rights reserved.</h4>
+    </footer>
+</html>
+</body>
+
+</html>

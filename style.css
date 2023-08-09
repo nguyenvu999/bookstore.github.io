@@ -1,0 +1,272 @@
+
+/* Default styles for all screen sizes */
+body {
+  font-size: 16px;
+}
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Main Section Styles */
+main {
+  padding: 20px;
+  margin-top: 50px;
+  
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #777;
+}
+
+/* Book Details Styles */
+.book-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.large-image img {
+  max-width: 200%;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+
+}
+
+.small-images img {
+  max-width: 190px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  image-rendering: auto; /* or pixelated */
+  display: flex;
+  flex-direction: column; /* Xếp thành một hàng dọc */
+  gap: 10px;
+}
+
+
+
+.book-info {
+  flex: 1;
+  text-align: center;
+  margin-top: 300px;
+  margin-left: 1  00px;
+
+}
+
+.book-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Add to Cart Button Styles */
+.add-to-cart {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Book Description Styles */
+.book-description {
+  margin-top: 30px;
+}
+
+.book-description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Footer Area Styles */
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer nav li:last-child {
+  margin-right: 0;
+}
+
+footer nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Styles for screens with a maximum width of 768px (e.g., tablets) */
+@media (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+  .small-images img {
+    max-width: 180px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    image-rendering: auto; /* or pixelated */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Styles for screens with a maximum width of 480px (e.g., smartphones) */
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+  .small-images img {
+    max-width: 180px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    image-rendering: auto; /* or pixelated */
+    display: inline;
+  }
+  .book-info {
+    flex: 1;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 200px;
+  }
+
+}
+@media (max-width: 2000px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Main Section Styles */
+main {
+  padding: 20px;
+}
+
+/* Contact Form Styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Position checkboxes and radios on the same line */
+input[type="checkbox"], input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Center the submit and reset buttons */
+.form-group button {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  label,
+  input,
+  select,
+  textarea,
+  button {
+    display: block;
+    width: 100%;
+  
+  }
+}
+
+@media (max-width: 767px) {
+  .book-details {
+    display: flex;
+    flex-direction: column; /* Vertical on mobile */
+  }
+}
+/* Hover animation on links */
+a:hover {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+/* Fade-in animation on images */
+img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
