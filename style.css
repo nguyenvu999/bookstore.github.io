@@ -1,3 +1,10 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Pham Nguyen Vu
+  ID: s3929202
+  Acknowledgement: HTML , CSS */ 
 
 /* Default styles for all screen sizes */
 body {
@@ -54,9 +61,9 @@ main {
   height: auto;
   border: 1px solid #ddd;
   border-radius: 5px;
-  image-rendering: auto; /* or pixelated */
+  image-rendering: auto; 
   display: flex;
-  flex-direction: column; /* Xếp thành một hàng dọc */
+  flex-direction: column; 
   gap: 10px;
 }
 
@@ -133,7 +140,7 @@ footer nav li a {
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
-    image-rendering: auto; /* or pixelated */
+    image-rendering: auto; 
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -150,7 +157,7 @@ footer nav li a {
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
-    image-rendering: auto; /* or pixelated */
+    image-rendering: auto; 
     display: inline;
   }
   .book-info {
@@ -210,7 +217,7 @@ textarea {
   resize: vertical;
 }
 
-/* Position checkboxes and radios on the same line */
+
 input[type="checkbox"], input[type="radio"] {
   display: inline-block;
   width: auto;
@@ -246,7 +253,7 @@ input[type="checkbox"], input[type="radio"] {
 @media (max-width: 767px) {
   .book-details {
     display: flex;
-    flex-direction: column; /* Vertical on mobile */
+    flex-direction: column; 
   }
 }
 /* Hover animation on links */
